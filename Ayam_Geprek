@@ -202,30 +202,30 @@ void pesan(){
   
   	/*Struk belanja*/
   	printf("\n");
-	printf("\t\t\t\t===================================\n");
-	printf("\t\t\t\t||        AYAM GEPREK'86         ||\n");
-	printf("\t\t\t\t||      JL. ANTASURA-DENPASAR    ||\n");
-	printf("\t\t\t\t===================================\n");
+	printf("\t\t\t\t========================================\n");
+	printf("\t\t\t\t||        AYAM GEPREK'86            ||\n");
+	printf("\t\t\t\t||      JL. ANTASURA-DENPASAR       ||\n");
+	printf("\t\t\t\t=======================================\n");
 	printf("\t\t\t\tKasir :");
 	scanf("%s", &kasir[10]);
 	time(&t);
 	printf("\t\t\t\t%s", ctime(&t));
-	printf("\t\t\t\t-----------------------------------\n");
+	printf("\t\t\t\t-------------------------------------\n");
   	printf("\t\t\t\tPesanan   	Jumlah     	Harga\n");
   	for(i=0; i<jmlh_pesan; i++){
     	printf("\t\t\t\t%s      	%d x %d    	%d", nama[i], jumlah[i], harga_satuan[i], harga[i]);
     	printf("\n");
   	}
-	printf("\t\t\t\t-----------------------------------\n");
+	printf("\t\t\t\t-------------------------------------\n");
   	printf("\t\t\t\ttotal		:Rp %d\n", total);
 	printf("\t\t\t\tcash		:Rp ");
 	scanf("%d", &cash);
 	kembalian= cash-total;
 	printf("\t\t\t\tkembalian	:Rp %d\n",kembalian);
-	printf("\t\t\t\t-----------------------------------\n");
+	printf("\t\t\t\t-------------------------------------\n");
 	printf("\t\t\t\tTERIMA KASIH TELAH BERBELANJA!\n");
 	printf("\t\t\t\tSilahkan Berbelanja Kembali!!\n");
-	printf("\t\t\t\t-----------------------------------\n");
+	printf("\t\t\t\t-------------------------------------\n");
 	printf("\n");
 	
 	/*repetisi ketika ingin mengulang pembayaran di kasir tanpa perlu login kembali*/
@@ -250,16 +250,16 @@ void pesan(){
 /*fungsi utama*/
 int main(){
   	int tujuan;		//pilihan menu tujuan registrasi atau login
-  	char ke_login;	//untuk memilih setelah regis ke menu login atau keluar
+  	char ke_login;	        //untuk memilih setelah regis ke menu login atau keluar
   	
   	awal:			//identifier awal
-  	printf("\t\t\t\t--------------------------\n");
+  	printf("\t\t\t\t----------------------------------------\n");
   	printf("\t\t\t\t|    AYAM GEPREK '86'    |\n");
-  	printf("\t\t\t\t--------------------------\n");
-  	printf("\t\t\t\t|1. Menu Registrasi kasir|\n");
-  	printf("\t\t\t\t|2. Menu Login Kasir	 |\n");
-  	printf("\t\t\t\t|3. Keluar		 |\n");
-  	printf("\t\t\t\t--------------------------\n\n");
+  	printf("\t\t\t\t----------------------------------------\n");
+  	printf("\t\t\t\t|1. Menu Registrasi kasir       |\n");
+  	printf("\t\t\t\t|2. Menu Login Kasir	        |\n");
+  	printf("\t\t\t\t|3. Keluar		        |\n");
+  	printf("\t\t\t\t----------------------------------------\n\n");
   	printf("\t\t\t\tMasukan Pilihan Anda :");
   	scanf("%d", &tujuan);
   	system("cls");
