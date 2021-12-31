@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>      //deklarasi library untuk proses input dan output
+#include <string.h>     //deklarasi library untuk type data string
+#include <stdlib.h>     //deklarasi library untuk sytem cls dan pause
+#include <time.h>       //deklarasi library untuk menunjukkan waktu sekarang
 void regis();		//deklarasi fungsi regis
 void login();		//deklarasi fungsi login
 void menu(void);	//deklarasi fungsi menu
@@ -10,7 +10,7 @@ void pesan();		//deklarasi fungsi pesan
 struct kasir{
 	char nama[20];		//nama kasir yang registrasi
 	char alamat[20];	//alamat kasir yang registrasi
-	int umur;			//umur kasir yang registrasi
+	int umur;		//umur kasir yang registrasi
 	char telp[15];		//no HP kasir yang registrasi
 	char user[20];		//username yang dibuat oleh kasir yang registrasi
 	char pass[20];		//password yang dibuat oleh kasir yang registrasi
@@ -18,7 +18,7 @@ struct kasir{
 
 /*fungsi dengan argumen untuk proses registrasi*/
 void regis(){
-	char simpan;	//untuk memilih simpan data registrasi atau tidak
+	char simpan;	        //untuk memilih simpan data registrasi atau tidak
 	
 	isi_data:		//identifier isi_data
 	struct kasir k1;
@@ -59,7 +59,7 @@ void regis(){
 void login(){
 	char user[20]; 	//input user pegawai
   	char pass[20]; 	//input password pegawai
-  	char ulang;		//mengulangi proses login ketika salah username dan atau password
+  	char ulang;	//mengulangi proses login ketika salah username dan atau password
 	do{
 		printf("\t\t\t\t************Login Kasir**************\n\n");
 		printf("\t\t\t\tMasukan Username	: ");
